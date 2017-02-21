@@ -18,4 +18,9 @@ public class Figura
    {
        return area;
     }
+    
+   public void calculaArea()
+   {
+       System.out.println("Oppppppsi");
+   }
 }
