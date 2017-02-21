@@ -20,14 +20,14 @@ public class Principal
         fig[1] = c1;
         fig[2] = ci1;
         
-        for(int i=0; i<fig.length;i++)
+        for(Figura g : fig)
         {
-            fig[i].calculaArea();
+            g.calculaArea();
         }
         
-        for(int i=0; i<fig.length;i++)
+        for(Figura g : fig)
         {
-             System.out.println("El área es : " + fig[i].accedeArea());
+             System.out.println("El área es : " + g.accedeArea());
         }
 
     }
