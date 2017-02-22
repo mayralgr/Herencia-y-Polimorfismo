@@ -23,4 +23,9 @@ public class Figura
    {
        System.out.println("Oppppppsi");
    }
+   
+   public String dimeInfo()
+   {
+       return ""+area;
+   }
 }

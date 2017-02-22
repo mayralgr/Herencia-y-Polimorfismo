@@ -32,9 +32,8 @@ public class Principal
         while(ite.hasNext())
         {
             Figura g = ite.next();
-            System.out.println("El área es : " + g.accedeArea());
+            System.out.println(g.dimeInfo());
         }
-
 
     }
 }
