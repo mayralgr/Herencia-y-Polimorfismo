@@ -22,9 +22,13 @@ public class Cuadrado extends Figura
        area = lado*lado;
     }
    
-       public String dimeInfo()
+   /*    public String dimeInfo()
    {
        return "Cuadrado " + super.dimeInfo();
-   }
-   
+   }*/
+   @Override
+   public String toString()
+   {
+       return "Cuadrado con àrea =" + super.toString();
+    }
 }

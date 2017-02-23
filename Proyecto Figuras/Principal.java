@@ -32,7 +32,7 @@ public class Principal
         while(ite.hasNext())
         {
             Figura g = ite.next();
-            System.out.println(g.dimeInfo());
+            System.out.println(g);
         }
 
     }

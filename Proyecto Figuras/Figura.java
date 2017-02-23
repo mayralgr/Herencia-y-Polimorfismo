@@ -24,8 +24,14 @@ public class Figura
        System.out.println("Oppppppsi");
    }
    
-   public String dimeInfo()
+   /*public String dimeInfo()
    {
        return ""+area;
-   }
+   }*/
+   
+   @Override
+   public String toString()
+   {
+       return "" + area;
+    }
 }
