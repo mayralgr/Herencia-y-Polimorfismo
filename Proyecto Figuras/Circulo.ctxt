@@ -6,4 +6,6 @@ comment1.target=void\ calculaArea()
 comment2.params=
 comment2.target=java.lang.String\ toString()
 comment2.text=public\ String\ dimeInfo()\r\n\ \ \ {\r\n\ \ \ \ \ \ \ return\ "Circulo\ "\ +\ super.dimeInfo();\r\n}
-numComments=3
+comment3.params=obj
+comment3.target=boolean\ equals(java.lang.Object)
+numComments=4
