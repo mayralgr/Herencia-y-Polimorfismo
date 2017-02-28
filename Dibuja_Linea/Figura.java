@@ -1,43 +1,31 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Color;
 /**
  * Write a description of class Figura here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Figura
+abstract public class Figura
 {
    private int posx;
    private int posy;
-   
-   public Figura()
+   public Figura(int x, int y)
    {
+       posx=x;
+       posy=y;
     }
     
-    public int posx1()
+    protected int posx1()
     {
         return posx;
     }
     
-    public int posy1()
+    protected int posy1()
     {
         return posy;
     }
     
-    public void accedePosx(int x)
-    {
-        posx=x;
-    }
-    
-    public void accedePosy(int y)
-    {
-        posy=y;
-    }
-   
-    public void dibuja(Graphics g)
-    {
-        
-        
-    }
+    abstract public void dibuja(Graphics g);
 }
