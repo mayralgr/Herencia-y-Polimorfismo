@@ -5,5 +5,5 @@ comment1.params=
 comment1.target=void\ calculaArea()
 comment2.params=
 comment2.target=java.lang.String\ toString()
-comment2.text=\ \ \ \ public\ String\ dimeInfo()\r\n\ \ \ {\r\n\ \ \ \ \ \ \ return\ "Cuadrado\ "\ +\ super.dimeInfo();\r\n}
+comment2.text=\ \ \ \ public\ String\ dimeInfo()\n\ \ \ {\n\ \ \ \ \ \ \ return\ "Cuadrado\ "\ +\ super.dimeInfo();\n}
 numComments=3
