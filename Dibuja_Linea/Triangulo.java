@@ -14,16 +14,17 @@ public class Triangulo extends Figura
    
    public Triangulo(int x, int y, float b, float a)
    {
+       super.accedePosx(x);
+       super.accedePosy(y);
        base = b;
        altura = a;
-       
     }
    
    public void dibuja(Graphics g)
    {
        Graphics2D g2 = (Graphics2D)g;
-       g2.drawLine(this.posx,this.posy,this.posx+b,this.posy);//base
-       g2.drawLine(this.posx,this.posy,(this.posx+b)/2,this.posy+a);//lado 1
-       g2.drawLine(this.posx+b,this.posy,(this.posx+b)/2,this.posy+a);//lado 2
+       g2.drawLine(super.posx1(),super.posy1(),super.posx1()+(int)base,super.posy1());//base
+       g2.drawLine(super.posx1(),super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 1
+       g2.drawLine(super.posx1()+(int)base,super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 2
     }
 }

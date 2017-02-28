@@ -12,14 +12,15 @@ public class Circulo extends Figura
    
    public Circulo(int x, int y, float r)
    {
+       super.accedePosx(x);
+       super.accedePosy(y);
        radio = r;
-       
     }
 
     public void dibuja(Graphics g)
    {
         Graphics2D g2 = (Graphics2D)g;
-        g2.drawOval(this.posx,this.posy,this.r,this.r);
+        g2.drawOval(super.posx1(),super.posy1(),(int)this.radio,(int)this.radio);
     }
       
 }

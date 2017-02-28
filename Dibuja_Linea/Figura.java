@@ -11,15 +11,33 @@ public class Figura
    private int posx;
    private int posy;
    
-   public Figura(int x, int y)
+   public Figura()
    {
-       posx=x;
-       posy=y;
     }
     
+    public int posx1()
+    {
+        return posx;
+    }
+    
+    public int posy1()
+    {
+        return posy;
+    }
+    
+    public void accedePosx(int x)
+    {
+        posx=x;
+    }
+    
+    public void accedePosy(int y)
+    {
+        posy=y;
+    }
+   
     public void dibuja(Graphics g)
     {
-        //Graphics2D g2 = (Graphics2D)g;
+        
         
     }
 }
