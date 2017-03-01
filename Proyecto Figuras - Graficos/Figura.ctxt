@@ -1,10 +1,12 @@
 #BlueJ class context
-comment0.params=x\ y
-comment0.target=Figura(int,\ int)
+comment0.params=x\ y\ co
+comment0.target=Figura(int,\ int,\ java.awt.Color)
 comment1.params=
-comment1.target=int\ posx1()
+comment1.target=java.awt.Color\ accedeColor()
 comment2.params=
-comment2.target=int\ posy1()
-comment3.params=g
-comment3.target=void\ dibuja(java.awt.Graphics)
-numComments=4
+comment2.target=int\ posx1()
+comment3.params=
+comment3.target=int\ posy1()
+comment4.params=g
+comment4.target=void\ dibuja(java.awt.Graphics)
+numComments=5

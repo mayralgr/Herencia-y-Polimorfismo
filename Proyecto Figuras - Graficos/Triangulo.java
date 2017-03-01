@@ -13,9 +13,9 @@ public class Triangulo extends Figura
    private float base;
    private float altura;
    
-   public Triangulo(int x, int y, float b, float a)
+   public Triangulo(int x, int y, float b, float a, Color c)
    {
-       super(x,y);
+       super(x,y,c);
        base = b;
        altura = a;
     }
@@ -24,7 +24,7 @@ public class Triangulo extends Figura
    public void dibuja(Graphics g)
    {
        Graphics2D g2 = (Graphics2D)g;
-       g2.setColor(Color.blue);
+       g2.setColor(super.accedeColor());
        g2.drawLine(super.posx1(),super.posy1(),super.posx1()+(int)base,super.posy1());//base
        g2.drawLine(super.posx1(),super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 1
        g2.drawLine(super.posx1()+(int)base,super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 2

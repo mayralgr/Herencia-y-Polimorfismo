@@ -11,9 +11,9 @@ public class Circulo extends Figura
 {
     private float radio;
    
-   public Circulo(int x, int y, float r)
+   public Circulo(int x, int y, float r, Color c)
    {
-       super(x,y);
+       super(x,y,c);
        radio = r;
     }
 
@@ -22,7 +22,7 @@ public class Circulo extends Figura
     public void dibuja(Graphics g)
    {
         Graphics2D g2 = (Graphics2D)g;
-        g2.setColor(Color.green);
+        g2.setColor(super.accedeColor());
         g2.drawOval(super.posx1(),super.posy1(),(int)this.radio,(int)this.radio);
     }
       

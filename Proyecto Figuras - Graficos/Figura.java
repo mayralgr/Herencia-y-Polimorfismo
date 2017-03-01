@@ -11,10 +11,17 @@ abstract public class Figura
 {
    private int posx;
    private int posy;
-   public Figura(int x, int y)
+   private Color c;
+   public Figura(int x, int y, Color co)
    {
        posx=x;
        posy=y;
+       c=co;
+    }
+    
+    protected Color accedeColor()
+    {
+        return c;
     }
     
     protected int posx1()

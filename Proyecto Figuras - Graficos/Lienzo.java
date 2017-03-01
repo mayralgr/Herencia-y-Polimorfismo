@@ -14,29 +14,34 @@ public class Lienzo extends JPanel
 {
     ArrayList <Figura> fig = new ArrayList<Figura>();
     
-    @Override
-    public void paintComponent(Graphics g)
+    public Lienzo()
     {
-        Graphics2D g2 = (Graphics2D)g;
-        //g2.drawString("Hola Mundo",100, 200);
-        /*g2.drawRect(50,30,20,40);
-        g2.drawLine(60,200,100,90);
-        g2.drawOval(100, 100, 20,20);
-        */
-       Triangulo t1 = new Triangulo(50,50,45,50);
-       Cuadrado c1 = new Cuadrado(100,100,75);
-       Circulo ci1 = new Circulo(150,150,40);
+       Color c=new Color(15,246,45);
+       Color t =new Color(45,86,75);
+       Color h=new Color(200,150,40);
+       Color k =new Color(200,50,125);
+       
+       
+       Triangulo t1 = new Triangulo(50,50,45,50,c);
+       Cuadrado c1 = new Cuadrado(100,100,75,t);
+       Circulo ci1 = new Circulo(150,150,40,h);
+       Rombo r = new Rombo(30,200,40,20,k);
        
        fig.add(t1);
        fig.add(c1);
        fig.add(ci1);
-       
+       fig.add(r);
+    }
+    
+    @Override
+    public void paintComponent(Graphics g)
+    {
        Iterator <Figura> it = fig.iterator();
         
         while(it.hasNext())
         {
             Figura fg = it.next();
-            fg.dibuja(g2);
+            fg.dibuja(g);
         }
        
     }

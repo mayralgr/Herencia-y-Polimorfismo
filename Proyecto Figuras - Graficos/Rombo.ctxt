@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=x\ y\ r\ c
-comment0.target=Circulo(int,\ int,\ float,\ java.awt.Color)
+comment0.params=x\ y\ a\ b\ c
+comment0.target=Rombo(int,\ int,\ float,\ float,\ java.awt.Color)
 comment1.params=g
 comment1.target=void\ dibuja(java.awt.Graphics)
 numComments=2

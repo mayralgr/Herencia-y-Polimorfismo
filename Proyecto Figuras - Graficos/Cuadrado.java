@@ -11,9 +11,9 @@ public class Cuadrado extends Figura
 {
    private float lado;
  
-   public Cuadrado(int x, int y, float l)
+   public Cuadrado(int x, int y, float l, Color c)
    {
-      super(x,y);
+      super(x,y,c);
        lado = l;
     }
    
@@ -21,7 +21,7 @@ public class Cuadrado extends Figura
    public void dibuja(Graphics g)
    {
        Graphics2D g2 = (Graphics2D)g;
-       g2.setColor(Color.red);
+       g2.setColor(super.accedeColor());
        g2.drawRect(super.posx1(),super.posy1(),(int)this.lado,(int)this.lado);
     }
    
