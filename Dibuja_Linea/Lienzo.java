@@ -23,9 +23,9 @@ public class Lienzo extends JPanel
         g2.drawLine(60,200,100,90);
         g2.drawOval(100, 100, 20,20);
         */
-       Triangulo t1 = new Triangulo(50,50,13,14);
-       Cuadrado c1 = new Cuadrado(100,100,50);
-       Circulo ci1 = new Circulo(150,150,15);
+       Triangulo t1 = new Triangulo(50,50,45,50);
+       Cuadrado c1 = new Cuadrado(100,100,75);
+       Circulo ci1 = new Circulo(150,150,40);
        
        fig.add(t1);
        fig.add(c1);

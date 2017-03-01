@@ -17,6 +17,7 @@ public class Cuadrado extends Figura
        lado = l;
     }
    
+    @Override
    public void dibuja(Graphics g)
    {
        Graphics2D g2 = (Graphics2D)g;

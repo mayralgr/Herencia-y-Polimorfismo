@@ -20,10 +20,11 @@ public class Triangulo extends Figura
        altura = a;
     }
 
+    @Override
    public void dibuja(Graphics g)
    {
        Graphics2D g2 = (Graphics2D)g;
-       
+       g2.setColor(Color.blue);
        g2.drawLine(super.posx1(),super.posy1(),super.posx1()+(int)base,super.posy1());//base
        g2.drawLine(super.posx1(),super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 1
        g2.drawLine(super.posx1()+(int)base,super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 2
