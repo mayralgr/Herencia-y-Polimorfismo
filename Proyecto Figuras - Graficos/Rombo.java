@@ -25,6 +25,8 @@ public class Rombo extends Figura
    {
         Graphics2D g2 = (Graphics2D)g;
         g2.setColor(super.accedeColor());
+        //g2.fillPolygon(_p_)
+        
         g2.drawLine(super.posx1(),super.posy1(),super.posx1()+(int)dm/2,super.posy1()+(int)dM/2);
         
         g2.drawLine(super.posx1()+(int)dm/2,super.posy1()+(int)dM/2,super.posx1(),super.posy1()+(int)dM);

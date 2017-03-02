@@ -22,6 +22,8 @@ public class Cuadrado extends Figura
    {
        Graphics2D g2 = (Graphics2D)g;
        g2.setColor(super.accedeColor());
+       g2.fillRect(super.posx1(),super.posy1(),(int)this.lado,(int)this.lado);
+       
        g2.drawRect(super.posx1(),super.posy1(),(int)this.lado,(int)this.lado);
     }
    
