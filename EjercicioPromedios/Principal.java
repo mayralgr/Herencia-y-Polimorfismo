@@ -16,9 +16,6 @@ public class Principal
         b.agregar(cb);
         b.agregar(cb1);
         b.agregar(cb2);
-        float s;
-        
-        s=b.calculaPromedio();
-        System.out.println("Promedio de cuentas Bancarias: " + s);
+        System.out.println("Promedio de cuentas Bancarias: " + b.calculaPromedio());
     }
 }
