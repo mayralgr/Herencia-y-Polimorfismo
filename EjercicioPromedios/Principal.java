@@ -16,6 +16,19 @@ public class Principal
         b.agregar(cb);
         b.agregar(cb1);
         b.agregar(cb2);
+        
         System.out.println("Promedio de cuentas Bancarias: " + b.calculaPromedio());
+        
+        Planeta pl = new Planeta();
+        Pais p = new Pais(25);
+        Pais p1 = new Pais(32);
+        Pais p2 = new Pais(94);
+        
+        pl.agregar(p);
+        pl.agregar(p1);
+        pl.agregar(p2);
+        System.out.println("Promedio de habitantes: " + pl.calculaPromedio());
+        
+        
     }
 }
