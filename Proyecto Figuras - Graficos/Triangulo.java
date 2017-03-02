@@ -25,8 +25,13 @@ public class Triangulo extends Figura
    {
        Graphics2D g2 = (Graphics2D)g;
        g2.setColor(super.accedeColor());
-       g2.drawLine(super.posx1(),super.posy1(),super.posx1()+(int)base,super.posy1());//base
-       g2.drawLine(super.posx1(),super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 1
-       g2.drawLine(super.posx1()+(int)base,super.posy1(),(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 2
+       int []x={super.posx1(),super.posx1(),super.posx1()+(int)base};
+       int []y={super.posy1(),super.posy1(),super.posy1()};
+       g2.drawPolygon(x,y,3);
+       g2.fillPolygon(x,y,3);
+       /*
+       g2.drawLine(,,super.posx1()+(int)base,super.posy1());//base
+       g2.drawLine(,(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 1
+       g2.drawLine(,(super.posx1()+(int)base)/2,super.posy1()+(int)altura);//lado 2*/
     }
 }
