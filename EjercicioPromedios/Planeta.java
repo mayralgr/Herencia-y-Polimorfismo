@@ -22,6 +22,13 @@ public class Planeta
     
     public float calculaPromedio()
     {
-       return 0;
+       Pais[] p;
+        p = new Pais[paises.size()];
+        /*for(int i=0;i<cb.size();i++)
+        {
+            arrCuentas[i]=cb.get(i);
+        }*/
+        p=paises.toArray(p);
+       return Utileria.calculaPromedio(p);
     }
 }

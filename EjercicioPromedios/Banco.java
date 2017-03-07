@@ -21,7 +21,13 @@ public class Banco
     
     public float calculaPromedio()
     {
-        float s=0;
-       return s;
+        CuentaBancaria[] arrCuentas;
+        arrCuentas = new CuentaBancaria[cb.size()];
+        /*for(int i=0;i<cb.size();i++)
+        {
+            arrCuentas[i]=cb.get(i);
+        }*/
+        arrCuentas=cb.toArray(arrCuentas);
+       return Utileria.calculaPromedio(arrCuentas);
     }
 }
