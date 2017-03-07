@@ -9,25 +9,21 @@ public class Principal
 {
     public static void main(String [] args)
     {
-        Banco b=new Banco();
-        CuentaBancaria cb=new CuentaBancaria(100);
-        CuentaBancaria cb1=new CuentaBancaria(200);
-         CuentaBancaria cb2=new CuentaBancaria(300);
-        b.agregar(cb);
-        b.agregar(cb1);
-        b.agregar(cb2);
+        Medible[] cuentas = new Medible[3];
         
-        System.out.println("Promedio de cuentas Bancarias: " + b.calculaPromedio());
+        cuentas[0]=new CuentaBancaria(100);
+        cuentas[1]=new CuentaBancaria(200);
+        cuentas[2]=new CuentaBancaria(300);
+
+        System.out.println("Promedio de cuentas Bancarias: " + Utileria.calculaPromedio(cuentas));
         
-        Planeta pl = new Planeta();
-        Pais p = new Pais(25);
-        Pais p1 = new Pais(32);
-        Pais p2 = new Pais(94);
+        Medible[] paises = new Medible[3];
+       
+        paises[0]= new Pais(25);
+        paises[1]= new Pais(32);
+        paises[2]= new Pais(94);
         
-        pl.agregar(p);
-        pl.agregar(p1);
-        pl.agregar(p2);
-        System.out.println("Promedio de habitantes: " + pl.calculaPromedio());
+        System.out.println("Promedio de habitantes: " + Utileria.calculaPromedio(paises));
         
         
     }

@@ -22,12 +22,6 @@ public class Banco
     public float calculaPromedio()
     {
         float s=0;
-        Iterator <CuentaBancaria> it =cb.iterator();
-        while(it.hasNext())
-        {
-            CuentaBancaria c = it.next();
-            s+=(float)c.regresaSaldo();
-        }
-       return s/cb.size();
+       return s;
     }
 }

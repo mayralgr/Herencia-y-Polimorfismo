@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CuentaBancaria
+public class CuentaBancaria implements Medible
 {
    private int saldo;
    
@@ -14,7 +14,7 @@ public class CuentaBancaria
        saldo=s;
     }
     
-   public int regresaSaldo()
+   public int obtenerMedida()
    {
        return saldo;
     }

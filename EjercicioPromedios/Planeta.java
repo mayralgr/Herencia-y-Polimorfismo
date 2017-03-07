@@ -22,13 +22,6 @@ public class Planeta
     
     public float calculaPromedio()
     {
-        int s=0;
-        Iterator <Pais> it =paises.iterator();
-        while(it.hasNext())
-        {
-            Pais p = it.next();
-            s+=p.regresaHab();
-        }
-       return (float)s/paises.size();
+       return 0;
     }
 }

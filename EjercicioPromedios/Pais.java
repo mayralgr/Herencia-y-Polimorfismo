@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pais
+public class Pais implements Medible
 {
     private int habitantes;
     
@@ -14,7 +14,7 @@ public class Pais
        habitantes=h;
     }
     
-   public int regresaHab()
+   public int obtenerMedida()
    {
        return habitantes;
     }
