@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=x\ y\ r
 comment0.target=Pelota(int,\ int,\ int)
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pelota\r\n
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Pelota\n
 comment1.params=g
 comment1.target=void\ dibujate(java.awt.Graphics)
 comment2.params=r

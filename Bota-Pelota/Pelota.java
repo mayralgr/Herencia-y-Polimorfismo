@@ -13,8 +13,8 @@ public class Pelota
     private int posx;
     private int posy;
     private int radio;
-    int mx=1;
-    int my=1;
+    int incx;
+    int incy;
 
     /**
      * Constructor for objects of class Pelota
@@ -24,6 +24,8 @@ public class Pelota
         posx=x;
         posy=y;
         radio=r;
+        incx=10;
+        incy=10;
     }
     
     public void dibujate(Graphics g)
@@ -36,64 +38,14 @@ public class Pelota
     
     public void muevete(Rectangle r)
     {
-        //System.out.println("Mueve pelota..."); 
-        //System.out.println("Tamaño de la ventana: " + r.getWidth() + ", " + r.getHeight());
+        posx += incx;
+        posy += incy;
+        if (posx > r.getWidth()-radio*2 || posx < radio*2)    {
+            incx = -incx;
+        }
+        if (posy > r.getHeight()-radio*2 || posy < radio*2) {
+            incy = -incy;
+        }
         
-         posx+=mx;
-        posy+=my;
-        if(posy+radio>=r.getHeight()){
-            my*=-1;
-        }
-        else if(posx+radio>=r.getWidth()){
-            mx*=-1;
-        }
-        else if(posy-radio<=0){
-            my*=-1;
-        }
-        else if(posx-radio<0){
-            mx*=-1;
-        }
-    
-        
-        /*if(posx-radio<0)
-        {
-            System.out.println("1");
-            mx*=-1;
-            if(posy-radio<0)
-            {
-                my*=-1;
-                System.out.println("1.1");
-            }
-        }
-        else if(posx+radio>r.getWidth())
-        {
-            System.out.println("2");
-            mx*=-1;
-            if(posy+radio>r.getHeight())
-            {
-                System.out.println("2.2");
-                my*=1;
-            }
-        }else if(posy-radio<0)
-        {
-            System.out.println("3");
-            my*=-1;
-            if(posx-radio<0)
-            {
-                System.out.println("3.1");
-                mx*=-1;
-            }
-        }
-        else if(posy+radio>r.getHeight())
-        {
-            my*=-1;
-            if(posx+radio>r.getWidth())
-            {
-                mx*=-1;
-            }
-            System.out.println("4");
-        }
-        posx+=mx;
-        posy+=my;*/
     }
 }
