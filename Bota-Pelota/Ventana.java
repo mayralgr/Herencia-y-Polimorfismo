@@ -29,8 +29,8 @@ public class Ventana extends JFrame
         EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
         tiempo = new Timer(100, escuchaTiempo);
         tiempo.start();
-        EscuchadorRaton escuchaRaton = new EscuchadorRaton();
-        this.addMouseListener(escuchaRaton);
+        //EscuchadorRaton escuchaRaton = new EscuchadorRaton();
+        //this.addMouseListener(escuchaRaton);
 
     }
      class EscuchadorTiempo implements ActionListener
@@ -75,7 +75,7 @@ public class Ventana extends JFrame
     }
    }
    
-   class EscuchadorRaton implements MouseListener
+   /*class EscuchadorRaton implements MouseListener
    {
        @Override
        public void mouseClicked(MouseEvent e)
@@ -112,5 +112,5 @@ public class Ventana extends JFrame
         public void mouseReleased(MouseEvent e)
         {
         }
-    }
+    }*/
 }

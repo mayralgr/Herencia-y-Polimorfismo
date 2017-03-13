@@ -24,8 +24,13 @@ public class Pelota
         posx=x;
         posy=y;
         radio=r;
-        incx=10;
-        incy=10;
+        int aleatorio = (int)(Math.random()*2);
+        if(aleatorio==0)
+        {
+            aleatorio=-1;
+        }
+        incx=10*aleatorio;
+        incy=10*aleatorio;
     }
     
     public void dibujate(Graphics g)
