@@ -4,7 +4,10 @@ import java.awt.event.KeyEvent;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.Timer;/**
+import javax.swing.Timer;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+/**
  * Write a description of class Ventana here.
  * 
  * @author (your name) 
@@ -26,6 +29,9 @@ public class Ventana extends JFrame
         EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
         tiempo = new Timer(100, escuchaTiempo);
         tiempo.start();
+        EscuchadorRaton escuchaRaton = new EscuchadorRaton();
+        this.addMouseListener(escuchaRaton);
+
     }
      class EscuchadorTiempo implements ActionListener
    {
@@ -55,7 +61,6 @@ public class Ventana extends JFrame
         }
     }
     
-  
    @Override
    public void keyReleased(KeyEvent e)
    {
@@ -68,5 +73,44 @@ public class Ventana extends JFrame
    {
        //System.out.println("key Type.."+ e.getKeyChar());
     }
-}
+   }
+   
+   class EscuchadorRaton implements MouseListener
+   {
+       @Override
+       public void mouseClicked(MouseEvent e)
+       {
+           if(e.getClickCount()==1)
+           {
+               tiempo.stop();
+
+           }
+           else if(e.getClickCount()==2)
+           {
+               tiempo.start();
+            }
+          
+        }
+       
+       @Override
+       public void mouseEntered(MouseEvent e)
+       {
+           
+        }
+       
+       @Override
+       public void mouseExited(MouseEvent e)
+       {
+        }
+        
+        @Override
+       public void mousePressed(MouseEvent e)
+       {
+        }
+        
+        @Override
+        public void mouseReleased(MouseEvent e)
+        {
+        }
+    }
 }
